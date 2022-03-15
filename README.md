@@ -32,8 +32,8 @@ $ yarn run ios --simulator="iPhone 8"
 
 ## Prepate a testing APK for internal testing / QA / PM etc.
 
-1. navigate to `.env` file and make sure we are pointing to the desired environment host. GK, or Production.
-2. To generate the APK do the following:
+[//]: # (1. navigate to `.env` file and make sure we are pointing to the desired environment host. GK, or Production.)
+1. To generate the APK do the following:
 
 ```zsh
 # Navigate to the android folder
