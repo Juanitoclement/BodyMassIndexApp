@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from "react";
-import {Text, StyleSheet, View} from "react-native";
-import styled from 'styled-components/native';
+import {Text, StyleSheet, View, Platform} from "react-native";
 import {Picker} from '@react-native-picker/picker';
 
 import Layout from "./Layout/index,js";
 import IconButton from "../components/IconButton";
+
+const isIOS = Platform.OS === 'ios'
 
 export default function FindScreen() {
   const dummyArr = [5408, 6604, 32158, 84984, 8774, 34871]
@@ -73,9 +74,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   selectDropDown: {
-    height: 50,
+    height: isIOS ? 20 : 50,
     width: 150,
-    backgroundColor: '#94A3B8',
-    marginBottom: 20
+    backgroundColor: isIOS ? 'transparent' : '#94A3B8',
+    marginBottom: isIOS ? 200 : 20
   }
 });
