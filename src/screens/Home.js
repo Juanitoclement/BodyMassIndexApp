@@ -35,7 +35,7 @@ export default function HomeScreen() {
   const calculateBMI = () => {
     
     if(!mass || !height) {
-      setError('Please enter Weight / Height')
+      setError('Please enter Weight and Height')
       
       return
     }
